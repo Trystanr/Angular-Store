@@ -47,12 +47,5 @@ var productArray = [
 		productName: "Big Sur sofa",
 		productDescription: "Aluminum manufacturer's label to side ‘Memphis Milano Peter Shire 1986 Made in Italy’.\n",
 		productImage: "bowie-couch.jpg"
-	},
-	{
-		productID: "1",
-		productCategory: "Furniture",
-		productName: "Big Sur sofa",
-		productDescription: "Aluminum manufacturer's label to side ‘Memphis Milano Peter Shire 1986 Made in Italy’.\n",
-		productImage: "bowie-couch.jpg"
 	}
 ]

@@ -1,17 +1,10 @@
 body > .container {
-    padding: 60px 15px 0;
-}
-
-/* style.css */
-input.ng-dirty.ng-invalid {
-	border: 1px solid red;
-}
-select.ng-dirty.ng-invalid {
-	border: 1px solid red;
+    padding: 120px 15px 0;
 }
 
 
-/* these styles are for the demo, but are not required for the plugin */
+
+
 .zoom {
 	display:inline-block;
 	position: relative;
@@ -22,15 +15,28 @@ select.ng-dirty.ng-invalid {
 	width: 40vw;
 }
 
-.zoom img::selection { background-color: transparent; }
+.zoom img::selection {
+	background-color: transparent;
+}
 
 .product-thumb {
-	width: 20vw;
-	height: 20vw;
+	width: 100%;
+	height: 20vh;
+	background-color: #efefef;
 	/*height: 10vw;*/
 
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.product-title {
+
+	font-weight: 400;
+}
+
+.product-break {
+	height: 20px;
 }
 
 #product-list {
@@ -50,6 +56,12 @@ select.ng-dirty.ng-invalid {
 
 /*NAVBAR*/
 
+nav.navbar {
+	padding: 30px 0 ;
+
+	background-color: #E3EEEA;
+}
+
 .navbar-brand {
 	text-transform: lowercase;
 	font-weight: 700;
@@ -62,4 +74,14 @@ select.ng-dirty.ng-invalid {
 
 .nav-item {
 	font-weight: 700;
+}
+
+
+/*FORM STYLING*/
+
+input.ng-dirty.ng-invalid {
+	border: 1px solid red;
+}
+select.ng-dirty.ng-invalid {
+	border: 1px solid red;
 }
