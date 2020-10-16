@@ -1,0 +1,27 @@
+
+	<h1>Product Master</h1>
+
+<!--	<div class="row mb-2">-->
+<!--		<div class="col-md-6" ng-repeat="product in productsArray" id="product.productID" ng-click="productClicked($event)">-->
+<!--			<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">-->
+<!--				<div class="col p-4 d-flex flex-column position-static">-->
+<!--					<strong class="d-inline-block mb-2 text-primary">{{ product.productCategory }}</strong>-->
+<!--					<h3 class="mb-0">{{product.productName}}</h3>-->
+<!--					<div class="mb-1 text-muted">Nov 12</div>-->
+<!--					<a href="#!products/{{product.productID}}" class="stretched-link">View Product</a>-->
+<!--				</div>-->
+<!--				<div class="col-auto d-none d-lg-block product-thumb" style="background-image: url(images/products/{{product.productImage}})" >-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+
+	<div class="row">
+		<div class="col-sm" ng-repeat="product in productsArray" id="product.productID" ng-click="productClicked($event)">
+
+					<div style="width: 100%;height: 20vw; background-color: #efefef; background-image: url(images/products/{{product.productImage}})">
+
+					</div>
+					<h5 class="mb-0" style="text-align: center">{{product.productName | lowercase}}</h5>
+		</div>
+	</div>

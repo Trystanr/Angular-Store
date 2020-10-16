@@ -1,0 +1,65 @@
+body > .container {
+    padding: 60px 15px 0;
+}
+
+/* style.css */
+input.ng-dirty.ng-invalid {
+	border: 1px solid red;
+}
+select.ng-dirty.ng-invalid {
+	border: 1px solid red;
+}
+
+
+/* these styles are for the demo, but are not required for the plugin */
+.zoom {
+	display:inline-block;
+	position: relative;
+}
+
+.zoom img {
+	display: block;
+	width: 40vw;
+}
+
+.zoom img::selection { background-color: transparent; }
+
+.product-thumb {
+	width: 20vw;
+	height: 20vw;
+	/*height: 10vw;*/
+
+	background-size: cover;
+	background-position: center;
+}
+
+#product-list {
+	padding-left: 0;
+}
+
+#product-list li {
+	list-style: none;
+
+	margin: 10px 0;
+}
+
+#product-list li img {
+	width: 10vw;
+}
+
+
+/*NAVBAR*/
+
+.navbar-brand {
+	text-transform: lowercase;
+	font-weight: 700;
+	font-size: 24px;
+
+	padding: 0 0 4px 0;
+
+	margin-right: 5vw;
+}
+
+.nav-item {
+	font-weight: 700;
+}

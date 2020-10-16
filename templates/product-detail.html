@@ -1,0 +1,40 @@
+<h1>Product Detail</h1>
+
+<h2>{{ productDetail.productName }}</h2>
+
+<p> {{ productDetail.productDescription }}</p>
+
+
+
+<span class='zoom' id='ex1'>
+	<img src='images/products/{{productDetail.productImage}}' alt='Daisy on the Ohoopee'/>
+</span>
+
+<h4>Reviews:</h4>
+
+<div class="row feedback">
+	<div class="col-sm-6" ng-repeat="comment in comments track by $index">
+
+		<div class="card text-center">
+			<div class="card-body">
+				<h5 class="card-title">
+					{{ comment.category }}
+				</h5>
+				<div class="card-text">
+					Stars: {{ comment.starRating }} <br />
+					{{ comment.content }}
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+    $(document).ready(function(){
+        $('#ex1').zoom({
+            magnify: 1
+		});
+    });
+</script>
