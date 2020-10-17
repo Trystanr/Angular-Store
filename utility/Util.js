@@ -1,7 +1,7 @@
 function findProduct(prodID) {
 
     for (let i = 0; i < productArray.length; i++) {
-        if (productArray[i].productID == prodID) {
+        if (productArray[i].id == prodID) {
             return productArray[i];
         }
     }

@@ -11,41 +11,93 @@ var feedbackArray = [
 	}
 ];
 
-var productArray = [
+var featuredSlider = [
 	{
 		productID: "0",
-		productCategory: "Furniture",
-		productName: "Bel Air armchair",
-		productDescription: "This is almost an anti-chair. It's made up of many different shapes and forms. There are only a few flat lines on it, making you wonder \"How am I meant to sit on that?\", \"Where should I sit?\". It challenges traditional ideas of how a chair should be.\n" +
-			"\n",
-		productImage: "bowie-chair.jpg",
+		image: "coffee-room.jpg"
+	},
+	{
+		productID: "1",
+		image: "living-room.jpg"
+	},
+	{
+		productID: "2",
+		image: "lounge-room.jpg"
+	}
+];
+
+var productArray = [
+	{
+		id: "0",
+		category: "Furniture",
+		name: "Round Chair",
+		description: "Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat tellus at, hendrerit arcu.",
+		price: "699.99",
+		image: "round-chair.jpg",
 		comments:[
 			{
-				category: "Food",
-				starRating: "1",
-				content: "Mouldy Rice"
+				starRating: "5",
+				content: "Exquisite Chair, I would highly recommend purchasing it."
+			},
+			{
+				starRating: "2",
+				content: "No, this is bad."
 			}
 		]
 	},
 	{
-		productID: "1",
-		productCategory: "Furniture",
-		productName: "Big Sur sofa",
-		productDescription: "Aluminum manufacturer's label to side ‘Memphis Milano Peter Shire 1986 Made in Italy’.\n",
-		productImage: "bowie-couch.jpg"
+		id: "1",
+		category: "Furniture",
+		name: "Horison Chair",
+		price: "599.99",
+		description: "Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat tellus at, hendrerit arcu.",
+		image: "horison-chair.jpg",
+		comments:[]
 	},
 	{
-		productID: "1",
-		productCategory: "Furniture",
-		productName: "Big Sur sofa",
-		productDescription: "Aluminum manufacturer's label to side ‘Memphis Milano Peter Shire 1986 Made in Italy’.\n",
-		productImage: "bowie-couch.jpg"
+		id: "2",
+		category: "Furniture",
+		name: "Horison Table",
+		price: "3999.99",
+		description: "Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat tellus at, hendrerit arcu.",
+		image: "horison-table.jpg",
+		comments:[]
 	},
 	{
-		productID: "1",
-		productCategory: "Furniture",
-		productName: "Big Sur sofa",
-		productDescription: "Aluminum manufacturer's label to side ‘Memphis Milano Peter Shire 1986 Made in Italy’.\n",
-		productImage: "bowie-couch.jpg"
+		id: "3",
+		category: "Furniture",
+		name: "Oak Coat Stand",
+		price: "1499.99",
+		description: "Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat tellus at, hendrerit arcu.",
+		image: "oak-coat-stand.jpg",
+		comments:[]
+	},
+	{
+		id: "4",
+		category: "Furniture",
+		name: "Beetle Velvet Chair",
+		price: "899.99",
+		description: "Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat tellus at, hendrerit arcu.",
+		image: "beetle-velvet.jpg",
+		comments:[]
+	},
+	{
+		id: "5",
+		category: "Furniture",
+		name: "Ottoman Chair",
+		price: "899.99",
+		description: "Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat tellus at, hendrerit arcu.",
+		image: "ottoman-chair.jpg",
+		comments:[]
+	},
+
+	{
+		id: "5",
+		category: "Furniture",
+		name: "Umbrella Stand",
+		price: "499.99",
+		description: "Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat tellus at, hendrerit arcu.",
+		image: "umbrella-stand.jpg",
+		comments:[]
 	}
 ]

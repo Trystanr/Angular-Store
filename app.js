@@ -1,6 +1,7 @@
-var app = angular.module("sushibar", ["ngRoute", "slickCarousel"]);
+var app = angular.module("sushibar", ["ngRoute", "ngAnimate", "slickCarousel"]);
 
 app.config(function($routeProvider) {
+
 	$routeProvider.when("/", {
 		redirectTo: "/home",
 		pathMatch: 'full'

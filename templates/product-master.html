@@ -1,34 +1,27 @@
 
-	<h1>Product Master</h1>
 
-<!--	<div class="row mb-2">-->
-<!--		<div class="col-md-6" ng-repeat="product in productsArray" id="product.productID" ng-click="productClicked($event)">-->
-<!--			<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">-->
-<!--				<div class="col p-4 d-flex flex-column position-static">-->
-<!--					<strong class="d-inline-block mb-2 text-primary">{{ product.productCategory }}</strong>-->
-<!--					<h3 class="mb-0">{{product.productName}}</h3>-->
-<!--					<div class="mb-1 text-muted">Nov 12</div>-->
-<!--					<a href="#!products/{{product.productID}}" class="stretched-link">View Product</a>-->
-<!--				</div>-->
-<!--				<div class="col-auto d-none d-lg-block product-thumb" style="background-image: url(images/products/{{product.productImage}})" >-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--	</div>-->
 
-	<slick class="slider" dots="false">
-		<div style="height: 20vh;background-color: #efefef">1</div>
-		<div style="height: 20vh;background-color: #efefef">1</div>
-		<div style="height: 20vh;background-color: #efefef">1</div>
+	<slick id="product-slider" class="slider" dots="false" settings="slickConfig">
+		<div ng-repeat="slider in sliderArray" class="product-slide" style="background-image: url(images/featured/{{slider.image}})">
+
+		</div>
 	</slick>
 
-	<div class="row">
-			<div ng-repeat-start="product in productsArray" class="col-sm" id="product.productID" ng-click="productClicked($event)">
-						<div class="product-thumb" style="background-image: url(images/products/{{product.productImage}})"></div>
-						<h5 class="mb-0 product-title">{{product.productName | lowercase}}</h5>
-				<a href="#!products/{{product.productID}}" class="stretched-link"></a>
-			</div>
-			<div ng-repeat-end ng-if="($index+1) % 4 == 0" class="w-100 product-break">
+	<hr style="margin-bottom: 50px">
 
+	<h1 class="section-head">Products</h1>
+
+	<div class="row">
+			<div ng-repeat-start="product in productsArray" class="product-master col-sm" id="product.id" ng-click="productClicked($event)">
+				<div class="product-thumb" style="background-image: url(images/products/{{product.image}})" />
+				<h4 class="mb-0 product-title">
+					<!--					{{product.name | lowercase}}-->
+					{{product.name}}
+				</h4>
+				<h5 class="mb-0 product-price">
+					R{{product.price}}
+				</h5>
+				<a href="#!products/{{product.id}}" class="stretched-link"></a>
 			</div>
+			<div ng-repeat-end ng-if="($index+1) % 4 == 0" class="w-100 product-break" />
 	</div>

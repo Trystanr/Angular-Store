@@ -3,11 +3,12 @@
 
 <head>
 	<title>App Name</title>
+	<meta charset="UTF-8">
+
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css"> -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 
@@ -17,8 +18,7 @@
 	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script> -->
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
-
+	<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -50,19 +50,69 @@
 		</nav>
 	</header>
 
-	
-
 	<div role="main" id="main-container" class="container">
 		<div class="row">
-			<ng-view class="container">
+			<ng-view class="container" autoscroll="true">
 
 			</ng-view>
 		</div>
 	</div>
 
+	<footer class="container-fluid">
+		<div class="container py-5">
+			<div class="row w-100">
+				<div class="col-12 col-md">
+					<h5>app-name</h5>
+					<small class="d-block mb-3 text-muted">© 2020</small>
+				</div>
+				<div class="col-6 col-md">
+					<h5>Features</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="#">Cool stuff</a></li>
+						<li><a class="text-muted" href="#">Random feature</a></li>
+						<li><a class="text-muted" href="#">Team feature</a></li>
+						<li><a class="text-muted" href="#">Stuff for developers</a></li>
+						<li><a class="text-muted" href="#">Another one</a></li>
+						<li><a class="text-muted" href="#">Last time</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md">
+					<h5>Resources</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="#">Resource</a></li>
+						<li><a class="text-muted" href="#">Resource name</a></li>
+						<li><a class="text-muted" href="#">Another resource</a></li>
+						<li><a class="text-muted" href="#">Final resource</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md">
+					<h5>Resources</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="#">Business</a></li>
+						<li><a class="text-muted" href="#">Education</a></li>
+						<li><a class="text-muted" href="#">Government</a></li>
+						<li><a class="text-muted" href="#">Gaming</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md">
+					<h5>About</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="#">Team</a></li>
+						<li><a class="text-muted" href="#">Locations</a></li>
+						<li><a class="text-muted" href="#">Privacy</a></li>
+						<li><a class="text-muted" href="#">Terms</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
 	<!-- Angular -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-animate.js"></script>
 
 	<!-- Slick -->
 	<script src="./bower_components/slick-carousel/slick/slick.js"></script>
