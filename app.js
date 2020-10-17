@@ -17,6 +17,11 @@ app.config(function($routeProvider) {
 		templateUrl: "templates/about.html"
 	});
 
+	$routeProvider.when("/contact", {
+		controller: "ContactController",
+		templateUrl: "templates/contact.html"
+	});
+
 	$routeProvider.when("/products", {
 		controller: "ProductController",
 		templateUrl: "templates/product-master.html"

@@ -1,3 +1,3 @@
 app.controller("HomeController", function($scope) {
-    $scope.image = "images/sushi-white.jpg";
+    $scope.image = "living-room-cosy.jpg";
 });

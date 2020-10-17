@@ -2,6 +2,24 @@ body > .container {
     padding: 120px 15px 0;
 }
 
+/* HOME PAGE */
+
+#home-hero {
+	margin-top: 50px;
+	background-color: #F3F3F3;
+
+	background-size: cover;
+}
+
+#home-hero > .col {
+	padding: 20vh 0 20vh 0;
+	background-color: rgba(255,255,255,0.7);
+}
+
+.home-image {
+	background-size: cover;
+	background-position: center bottom;
+}
 
 /* PRODUCT DETAIL PAGE*/
 
@@ -189,6 +207,10 @@ body > .container {
 
 .product-detail {
 	padding: 40px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
 .product-detail
@@ -214,6 +236,8 @@ body > .container {
 	margin-top: 20px;
 	font-size: 20px;
 	font-weight: 400;
+
+	/*text-decoration: line-through #efefef;*/
 }
 
 .product-detail
@@ -221,6 +245,17 @@ body > .container {
 	margin-top: 20px;
 	font-size: 16px;
 	font-weight: 400;
+}
+
+.product-detail
+.product-add {
+	justify-self: flex-end;
+	margin-top: auto;
+
+	background-color: #385F71;
+	color: #fff;
+
+	padding: 10px 20px;
 }
 
 
@@ -234,7 +269,7 @@ nav.navbar {
 
 .navbar-brand {
 	text-transform: lowercase;
-	font-weight: 700;
+	font-weight: 900;
 	font-size: 24px;
 
 	padding: 0 0 4px 0;
@@ -249,7 +284,7 @@ nav.navbar {
 /* FOOTER */
 
 footer {
-	margin-top: 100px;
+	margin-top: 70px;
 	background-color: #E3EEEA;
 }
 

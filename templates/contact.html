@@ -1,0 +1,23 @@
+<h1>Contact</h1>
+
+<p>Want to get in touch? Take a look at our details below.</p>
+<p>Phone Numbers:</p>
+	<ul>
+		<li ng-repeat="num in phoneNumbers">{{ num }}</li>
+	</ul>
+
+<p>Email Addresses:</p>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Category</th>
+			<th>Address</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="(category, address) in emailAddresses">
+			<td>{{ category }}</td>
+			<td>{{ address }}</td>
+		</tr>
+	</tbody>
+</table>
