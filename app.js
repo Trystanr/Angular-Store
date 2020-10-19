@@ -1,4 +1,4 @@
-var app = angular.module("sushibar", ["ngRoute", "ngAnimate", "slickCarousel"]);
+var app = angular.module("oasis", ["ngRoute", "ngAnimate", "slickCarousel"]);
 
 app.config(function($routeProvider) {
 

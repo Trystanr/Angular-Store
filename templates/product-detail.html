@@ -51,6 +51,24 @@
 	<div class="col-md-6 offset-md-3">
 		<form name="commentForm" class="form-horizontal" ng-submit="addComment(commentForm)" novalidate>
 
+			<!-- Email Field -->
+			<div class="form-group">
+				<div class="col-xs-3">
+					<label for="email" class="control-label">Email</label>
+				</div>
+				<div class="col-xs-6">
+					<input type="email" class="form-control" name="email" placeholder="Your email address" ng-model="formdata.email" required>
+				</div>
+				<div class="col-xs-3">
+			<span class="error" ng-show="commentForm.email.$error.required">
+			Your email address is required.
+			</span>
+
+					<span class="error" ng-show="commentForm.email.$dirty && commentForm.email.$error.email">
+			This email is invalid.
+			</span>
+				</div>
+			</div>
 
 			<!-- Stars Field -->
 			<div class="form-group">
@@ -83,7 +101,7 @@
 
 			<div class="form-group">
 				<div class="col-xs-2 col-xs-offset-10">
-					<button type="submit" class="btn btn-primary shadow-none">Submit</button>
+					<button type="submit" class="btn btn-primary shadow-none" ng-disabled="commentForm.$invalid">Submit</button>
 				</div>
 			</div>
 		</form>

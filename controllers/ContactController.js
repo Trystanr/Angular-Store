@@ -1,8 +1,6 @@
 app.controller("ContactController", function($scope) {
-    $scope.phoneNumbers = ["(012) 333 4444","(011) 222 5555"];
+    $scope.phoneNumbers = ["(012) 333 4444"];
     $scope.emailAddresses = {
-        events: "pamela@sushibar.co.za",
-        feedback: "kurt@sushibar.co.za",
-        general: "info@sushibar.co.za"
+        trystan: "trystan.b@hotmail.com",
     };
 });
