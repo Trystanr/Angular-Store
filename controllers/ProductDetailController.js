@@ -3,13 +3,18 @@ app.controller("ProductDetailController", function($scope, $routeParams) {
     $scope.comments = $scope.productDetail.comments;
 
     $scope.formdata = {
+        email: "",
         starRating: "",
         content: ""
     }
 
     $scope.addComment = function(form) {
-        $scope.comments.push({starRating: $scope.formdata.starRating, content: $scope.formdata.content});
+        $scope.comments.push({
+            email: $scope.formdata.email,
+            starRating: $scope.formdata.starRating,
+            content: $scope.formdata.content});
         $scope.formdata = {
+            email: "",
             starRating: "",
             content: ""
         }

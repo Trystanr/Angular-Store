@@ -36,6 +36,8 @@
 <div class="row feedback" ng-if="comments.length > 0">
 	<div class="container text-center comment-parent" ng-repeat="comment in comments track by $index">
 			<div class="comment">
+				{{comment.email}}
+				<br />
 				{{ starRatingAsSymbols(comment.starRating) }}
 				<br />
 				{{ comment.content }}
