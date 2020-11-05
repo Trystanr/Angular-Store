@@ -12,7 +12,7 @@ app.controller("ProductController", function($scope) {
         method: {}
     };
 
-    $scope.productClicked = function(event) {
-        console.log(event.target.id);
-    }
+    // $scope.productClicked = function(event) {
+    //     console.log(event.target.id);
+    // };
 });

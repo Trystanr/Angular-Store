@@ -1,16 +1,3 @@
-var feedbackArray = [
-	{
-		category: "Food",
-		starRating: "1",
-		content: "Mouldy Rice"
-	},
-	{
-		category: "Food",
-		starRating: "1",
-		content: "Mouldy Rice"
-	}
-];
-
 var featuredSlider = [
 	{
 		productID: "0",

@@ -39,6 +39,9 @@
 							<a class="nav-link" href="#!home">Home <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
+							<a class="nav-link" href="#!menu">Menu</a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link" href="#!products">Products</a>
 						</li>
 						<li class="nav-item">
@@ -47,11 +50,29 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#!contact">Contact</a>
 						</li>
+						<li class="nav-item" ng-controller="CartController">
+							<a class="nav-link" href="" ng-click="toggleCart()">cart</a>
+
+							<div id="nav-cart" class="container" ng-class="{visible: showCart}">
+
+								<ul>
+									<li ng-repeat="item in cartItems track by $index" >
+
+										<span><a href="#!products/{{item.id}}">{{item.name}} {{ item.price | currency : 'R' : 2 }}</a></span>
+										<a ng-click="deleteItemFromCart($index)">X</a>
+									</li>
+								</ul>
+
+								<a href="" id="clear-cart" ng-click="clearCart()">Clear Cart</a>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
+
+
 
 	<div role="main" id="main-container" class="container">
 		<div class="row">
@@ -117,6 +138,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-animate.js"></script>
 
+	<!-- Angular Cookies-->
+	<script src="./bower_components/angular-cookies/angular-cookies.js"></script>
+
 	<!-- Slick -->
 	<script src="./bower_components/slick-carousel/slick/slick.js"></script>
 	<script src="./bower_components/angular-slick-carousel/dist/angular-slick.min.js"></script>
@@ -130,6 +154,8 @@
 
 	<!-- Controllers -->
 	<script src="controllers/HomeController.js"></script>
+	<script src="controllers/MenuController.js"></script>
+	<script src="controllers/CartController.js"></script>
 	<script src="controllers/AboutController.js"></script>
 	<script src="controllers/ContactController.js"></script>
 	<script src="controllers/ProductController.js"></script>

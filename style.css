@@ -94,6 +94,13 @@ body > .container {
 	border-color: #385F71;
 }
 
+.star {
+	font-size: 24px;
+}
+.star:hover {
+	cursor: pointer;
+}
+
 /* PRODUCT SLIDER */
 
 #product-slider {
@@ -279,6 +286,75 @@ nav.navbar {
 
 .nav-item {
 	font-weight: 700;
+}
+
+#nav-cart {
+	display: none;
+	width: 200px;
+	position: fixed;
+	top: 100px;
+	margin-left: -70px;
+
+	background-color: #E3EEEA;
+
+	padding: 0;
+
+
+}
+
+#nav-cart.visible {
+	display: block;
+}
+
+#nav-cart ul {
+	list-style: none;
+	padding: 0;
+}
+
+#nav-cart li {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: stretch;
+
+	border-bottom: 1px solid #B3D0C6;
+}
+
+#nav-cart li span {
+	padding: 6px 20px;
+}
+
+#nav-cart li span > a {
+	color: #000;
+	font-weight: bold;
+}
+
+#nav-cart li > a {
+	border-left: 1px solid #B3D0C6;
+
+	color: #CA3C25;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 0px 12px;
+}
+
+#nav-cart li > a:hover {
+	background-color: #B3D0C6;
+	cursor: pointer;
+}
+
+#nav-cart a#clear-cart {
+	width: 100%;
+	display: block;
+
+	text-align: center;
+
+	padding: 10px 10px;
+
+
 }
 
 /* FOOTER */

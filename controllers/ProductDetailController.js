@@ -1,4 +1,4 @@
-app.controller("ProductDetailController", function($scope, $routeParams) {
+app.controller("ProductDetailController", function($scope, $rootScope, $routeParams) {
     $scope.productDetail = findProduct($routeParams.id);
     $scope.comments = $scope.productDetail.comments;
 
@@ -27,4 +27,17 @@ app.controller("ProductDetailController", function($scope, $routeParams) {
         }
         return starRes;
     }
+
+    $scope.starRatingWithinRange = function(index) {
+        return (index <= parseInt($scope.formdata.starRating));
+    };
+
+    $scope.setStarRating = function(index) {
+        return $scope.formdata.starRating = index + "";
+    };
+
+    $scope.addToCart = function(i){
+        console.log("adding id:"+i.id+" to cart");
+        $rootScope.$emit("addItemToCart", i);
+    };
 });

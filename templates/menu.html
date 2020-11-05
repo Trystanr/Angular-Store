@@ -1,0 +1,15 @@
+<div class="well col-xs-5 col-sx-offset-1" ng-repeat="item in menuItems" ng-class="{platter: item.isPlatter}">
+	<h3>
+		{{ item.name }} -
+		<i>
+			{{ item.price | currency : 'R' : 2 }}
+		</i>
+	</h3>
+	<p>
+		{{ item.description }}
+	</p>
+</div>
+
+<div class="error">
+	{{errorMessage}}
+</div>

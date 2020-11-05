@@ -1,4 +1,4 @@
-var app = angular.module("oasis", ["ngRoute", "ngAnimate", "slickCarousel"]);
+var app = angular.module("oasis", ["ngRoute", "ngAnimate", "ngCookies", "slickCarousel"]);
 
 app.config(function($routeProvider) {
 
@@ -10,6 +10,11 @@ app.config(function($routeProvider) {
 	$routeProvider.when("/home", {
 		controller: "HomeController",
 		templateUrl: "templates/home.html"
+	});
+
+	$routeProvider.when("/menu", {
+		controller: "MenuController",
+		templateUrl: "templates/menu.html"
 	});
 
 	$routeProvider.when("/about", {

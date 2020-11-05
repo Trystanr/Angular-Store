@@ -23,7 +23,7 @@
 			{{ productDetail.description }}
 		</p>
 
-		<a href="#" class="product-add">Add To Cart</a>
+		<a href="" class="product-add" ng-click="addToCart(productDetail)">Add To Cart</a>
 
 	</div>
 </div>
@@ -62,13 +62,12 @@
 					<input type="email" class="form-control" name="email" placeholder="Your email address" ng-model="formdata.email" required>
 				</div>
 				<div class="col-xs-3">
-			<span class="error" ng-show="commentForm.email.$error.required">
-			Your email address is required.
-			</span>
-
+					<span class="error" ng-show="commentForm.email.$error.required">
+					Your email address is required.
+					</span>
 					<span class="error" ng-show="commentForm.email.$dirty && commentForm.email.$error.email">
-			This email is invalid.
-			</span>
+						This email is invalid.
+					</span>
 				</div>
 			</div>
 
@@ -77,14 +76,17 @@
 				<div class="col-xs-3">
 					<label for="stars" class="control-label">Rating</label>
 				</div>
-				<div class="col-xs-6">
-					<select class="form-control" name="stars" id="stars" ng-model="formdata.starRating">
+				<div class="col-xs-6" style=" user-select: none;">
+					<select class="form-control" name="stars" id="stars" ng-model="formdata.starRating" style="display: none">
 						<option value="1">1 Star</option>
 						<option value="2">2 Stars</option>
 						<option value="3">3 Stars</option>
 						<option value="4">4 Stars</option>
 						<option value="5">5 Stars</option>
 					</select>
+					<span class="star" ng-repeat="i in [1,2,3,4,5]" ng-click="setStarRating(i)">
+						{{ starRatingWithinRange(i) ? "&#x2605;" : "&#x2606;" }}
+					</span>
 				</div>
 			</div>
 
