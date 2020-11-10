@@ -10,12 +10,22 @@
 	<hr style="margin-bottom: 50px">
 
 	<h1 class="section-head">Products</h1>
-
+	<div class="row" id="product-sort">
+		<h5>order by</h5>
+		<span>
+			<a href="" ng-click="orderByType('')" ng-class="orderByThis === '' ? 'selected' : '' ">default</a>
+			<a href="" ng-click="orderByType('price')" ng-class="orderByThis === 'price' ? 'selected' : '' ">price</a>
+			<a href="" ng-click="orderByType('name')" ng-class="orderByThis === 'name' ? 'selected' : '' ">name</a>
+		</span>
+		<span style="margin-top: 10px;">
+			<a href="" ng-click="orderReverse = true" ng-class="orderReverse === true ? 'selected' : '' ">ascending</a>
+			<a href="" ng-click="orderReverse = false" ng-class="orderReverse === false ? 'selected' : '' ">descending</a>
+		</span>
+	</div>
 	<div class="row">
-			<div ng-repeat-start="product in productsArray" class="product-master col-sm" id="product.id" ng-click="productClicked($event)">
+			<div ng-repeat-start="product in productsArray | orderBy: orderByThis : orderReverse" class="product-master col-sm" id="product.id" ng-click="productClicked($event)">
 				<div class="product-thumb" style="background-image: url(images/products/{{product.image}})" />
 				<h4 class="mb-0 product-title">
-					<!--					{{product.name | lowercase}}-->
 					{{product.name}}
 				</h4>
 				<h5 class="mb-0 product-price">
