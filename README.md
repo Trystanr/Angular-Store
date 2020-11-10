@@ -8,7 +8,10 @@ Clone the files into a directory
 
 Run `http-server . -c-1 -p 8080` and click on the generated server link `http://127.0.0.1:8080`.
 
-
 ### Dependencies 
 
 AngularJS v1.8.1
+Angular Cookies
+Angular Slick
+jQuery
+Bootstrap Icons
