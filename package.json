@@ -1,0 +1,20 @@
+{
+  "name": "angular-store",
+  "version": "1.0.0",
+  "description": "Open Window Angular 204",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server . -c-1 -p 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trystanr/Angular-Store.git"
+  },
+  "author": "Trystan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trystanr/Angular-Store/issues"
+  },
+  "homepage": "https://github.com/Trystanr/Angular-Store#readme"
+}
